@@ -12,6 +12,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import QueriesContainer from "src/context/QueriesContainer";
 import Configurations from "src/screens/Configurations";
 import Home from "src/screens/Home";
+import { Analytics } from "@vercel/analytics/react";
 
 const Stack = createNativeStackNavigator();
 export const AppQueryApiDataProvider = new QueryClient();
@@ -58,6 +59,7 @@ export default function App() {
           <StatusBar />
         </NavigationContainer>
       </QueriesContainer>
+      <Analytics />
     </QueryClientProvider>
   );
 }
