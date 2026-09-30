@@ -7,7 +7,8 @@
     "appVersionSource": "remote",
     "version": "1.0.0",
     "platforms": [
-      "android"
+      "android",
+      "web"
     ],
     "orientation": "portrait",
     "icon": "./src/assets/icon.png",
